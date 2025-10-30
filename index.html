@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <img
+        src="images/logo.jpg"
+        alt="logo"
+        class="mehak"
+        width="80"
+        height="80"
+      />
+      <ul>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Find a Doctor</a></li>
+        <li><a href="#">Medical library</a></li>
+        <li><a href="#">Medical Services</a></li>
+        <button  class="btn patient">Patient Portal</button>
+        <button class="btn doctor">Doctors Portal</button>
+      </ul>
+    </nav>
+    <div class="slider" id="media-slider" aria-roledescription="carousel">
+      <div class="slides" data-current="0">
+        <!-- Image slide -->
+        <div class="slide" data-type="image" aria-hidden="false">
+          <img src="images/s1.jpg" class="media" alt="Hospital exterior" />
+        </div>
+
+        <!-- Replaced video slide with an image slide -->
+        <div class="slide" data-type="image" aria-hidden="true">
+          <img src="images/s8.jpg" class="media" alt="Migrant support" />
+        </div>
+
+        <div class="slide" data-type="image" aria-hidden="true">
+          <img src="images/s2.jpg" class="media" alt="Patients in waiting area" />
+        </div>
+
+        <div class="slide" data-type="image" aria-hidden="true">
+          <img src="images/s3.jpg" class="media" alt="Doctor consulting" />
+        </div>
+      </div>
+
+      <div class="controls" aria-hidden="false">
+        <!-- play/pause removed — autoplay always on; controls left for future buttons -->
+      </div>
+
+      <!-- Arrow navigation placed separately so it can be positioned bottom-right -->
+      <div class="arrow-nav" aria-hidden="false">
+        <button class="prev" aria-label="Previous slide">❮</button>
+        <button class="next" aria-label="Next slide">❯</button>
+      </div>
+
+      <div class="navigation" role="tablist" aria-label="Slider navigation">
+        <button class="nav-dot" role="tab" aria-selected="true" aria-controls="slide-0"></button>
+        <button class="nav-dot" role="tab" aria-selected="false" aria-controls="slide-1"></button>
+        <button class="nav-dot" role="tab" aria-selected="false" aria-controls="slide-2"></button>
+        <button class="nav-dot" role="tab" aria-selected="false" aria-controls="slide-3"></button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="circle-icon">
+        <div class="circle">
+          <img src="images/migrant.png" alt="Vendor" />
+        </div>
+        <div class="label">Migrant Workers</div>
+      </div>
+
+      <div class="circle-icon">
+        <div class="circle">
+          <img src="images/patient.png" alt="Patient" />
+        </div>
+        <div class="label">Patient</div>
+      </div>
+
+      <div class="circle-icon">
+        <div class="circle">
+          <img src="images/+.jpeg" alt="Emergency" />
+        </div>
+        <div class="label">Emergency/</div>
+      </div>
+
+      <div class="circle-icon">
+        <div class="circle">
+          <img src="images/doctor.jpeg" alt="Doctor" />
+        </div>
+        <div class="label">Doctor</div>
+      </div>
+
+      <div class="circle-icon">
+        <div class="circle">
+          <img src="images/visitor.png" alt="Visitor" />
+        </div>
+        <div class="label">Visitor</div>
+      </div>
+    </div>
+    <div class="disease-container">
+      <!-- Left Section: Alphabet -->
+      <div class="alphabet-section">
+        <h2>Find Diseases & Conditions By Alphabet</h2>
+        <div class="alphabet-grid">
+          <button>A</button>
+          <button>B</button>
+          <button>C</button>
+          <button>D</button>
+          <button>E</button>
+          <button>F</button>
+          <button>G</button>
+          <button>H</button>
+          <button>I</button>
+          <button>J</button>
+          <button>K</button>
+          <button>L</button>
+          <button>M</button>
+          <button>N</button>
+          <button>O</button>
+          <button>P</button>
+          <button>Q</button>
+          <button>R</button>
+          <button>S</button>
+          <button>T</button>
+          <button>U</button>
+          <button>V</button>
+          <button>W</button>
+          <button>X</button>
+          <button>Y</button>
+          <button>Z</button>
+        </div>
+      </div>
+
+      <!-- Right Section: Search -->
+      <div class="search-section">
+        <h2>Search Diseases and Conditions</h2>
+        <div class="search-bar">
+          <input type="text" placeholder="Search" />
+          <button class="search-btn">🔍</button>
+        </div>
+        <p>
+          Quickly find the information you need. Search our database to explore
+          detailed information on various diseases and conditions, including
+          symptoms, causes, and treatment options.
+        </p>
+      </div>
+    </div>
+    <!-- Footer Section -->
+    <footer class="footer">
+      <!-- Emergency Bar -->
+      <div class="emergency-bar">
+        <i class="fa-solid fa-phone" id="mob"></i>
+        <p>
+          Emergency Helpline: <strong>108</strong> | Migrant Helpline:
+          <strong>1800-425-4424</strong>
+          <span>Available 24/7 in Multiple Languages</span>
+        </p>
+      </div>
+
+      <!-- Main Footer -->
+      <div class="footer-container">
+        <!-- Left Section -->
+        <div class="footer-left">
+          <div class="footer-logo">
+            <img src="images/logo.jpg" />
+            <h3>Kerala Digital Health Records</h3>
+            <p id="con">
+              <i>Empowering migrant workers with accessible healthcare</i>
+            </p>
+          </div>
+
+          <div class="social-icons">
+            <span class="icon"><i class="fa-brands fa-instagram"></i></span>
+            <span class="icon"><i class="fa-brands fa-telegram"></i></span>
+            <span class="icon"><i class="fa-brands fa-facebook"></i></span>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Departments</a></li>
+            <li><a href="#">Emergency Services</a></li>
+            <li><a href="#">Patient Portal</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+
+        <!-- Medical Departments -->
+        <div class="footer-links">
+          <h4>Medical Departments</h4>
+          <ul>
+            <li>General Medicine</li>
+            <li>Emergency Medicine</li>
+            <li>Cardiology</li>
+            <li>Orthopedics</li>
+            <li>Gynecology</li>
+            <li>Pediatrics</li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-contact">
+          <h4>Contact Information</h4>
+
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            Kerala Government Hospital<br />
+            Medical College Road<br />
+            Thiruvananthapuram, Kerala 695011
+          </p>
+
+          <p>
+            <i class="fa-solid fa-square-phone"></i>
+            <strong>General:</strong> +91-471-2528300
+          </p>
+          <p><strong>Emergency:</strong> 108</p>
+          <p>
+            <i class="fa-regular fa-envelope"></i>
+            <strong>Email:</strong> info@keralahospital.gov.in
+          </p>
+          <p>
+            <i class="fa-regular fa-clock"></i>
+            <strong>General OPD:</strong> 8:00 AM - 6:00 PM
+          </p>
+          <p><strong>Emergency:</strong> 24/7 Available</p>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <p>
+          Official Government Links: <a href="#">Kerala Government</a> |
+          <a href="#">Health Department</a> | <a href="#">Norka Roots</a> |
+          <a href="#">Online Services</a>
+        </p>
+        <p>
+          © 2025 Kerala Government Hospital. All rights reserved. <br />
+          <small>Website designed for migrant worker accessibility</small>
+            
+        </p>
+          
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
