@@ -346,25 +346,111 @@
   font-size: 26px;
 }
 
+.footer-links h4,
+.footer-contact h4 {
+  color: var(--accent);
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+/* Larger headings for Quick Links & Medical Departments */
+.quick-links h4,
+.medical-departments h4 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: var(--accent);
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+@media (max-width: 700px) {
+  .quick-links h4,
+  .medical-departments h4 {
+    font-size: 18px;
+  }
+}
+
+/* Quick links and general footer lists */
 .footer-links ul {
   list-style: none;
-  font-size:26px;
-  margin-bottom:15px;
+  margin: 0;
+  padding: 0 0 0 6px; /* subtle left padding to align items */
+  margin-bottom: 18px;
 }
 
 .footer-links ul li {
-  margin: 6px 0;
-  font-size: 14px;
+  margin: 10px 0; /* increase vertical spacing */
+  font-size: 15px;
+  line-height: 1.8;
 }
 
 .footer-links ul li a {
   text-decoration: none;
   color: #fff;
-  transition: color 0.3s;
+  display: inline-block;
+  padding: 6px 8px; /* increase clickable area */
+  border-radius: 6px;
+  transition: color 180ms ease, background 180ms ease, transform 180ms ease;
 }
 
-.footer-links ul li a:hover {
-  color: var(--accent);
+.footer-links ul li a:hover,
+.footer-links ul li a:focus {
+  color: var(--primary);
+  background: rgba(255,255,255,0.06);
+  transform: translateX(4px);
+}
+
+/* Medical departments dropdown / stacked content */
+.medical-departments,
+.quick-links {
+  display: block;
+}
+
+.medical-departments ul,
+.quick-links ul {
+  list-style: none;
+  margin: 8px 0 0 0;
+  padding: 6px 0 6px 12px; /* indent children for clarity */
+  background: transparent;
+  color: #d0dada;
+}
+
+.medical-departments li,
+.quick-links li {
+  margin: 8px 0;
+  padding: 6px 4px;
+  border-radius: 6px;
+}
+
+.medical-departments li a,
+.quick-links li a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  transition: color 160ms ease, background 160ms ease;
+}
+
+.medical-departments li a:hover,
+.quick-links li a:hover {
+  color: var(--primary);
+  background:rgba(227, 230, 231,00.4s);
+  
+}
+
+/* Make dropdown lists clearer on small screens */
+@media (max-width: 700px) {
+  .footer-links ul,
+  .medical-departments ul,
+  .quick-links ul {
+    padding-left: 0; /* remove indent to use full width */
+  }
+  .footer-links ul li,
+  .medical-departments li,
+  .quick-links li {
+    margin: 10px 0;
+    padding: 8px 0;
+  }
 }
 
 /* Contact */
@@ -391,7 +477,7 @@
 }
 
 .footer-bottom a:hover {
-  text-decoration: underline;
+  text-decoration:underline;
 }
 body{
   font-family: Arial, Helvetica, sans-serif;
