@@ -5,8 +5,18 @@
 
 }
 
+:root{
+  --primary: #0d9488;
+  --secondary: #d0dada;
+  --bg-1: #f3f7f7;
+  --bg-2: #f1fdfa;
+  --accent: #e0fbf6;
+  --text: #033d3d;
+  --white: #fff;
+}
+
 .navbar{
-    background-color: rgb(250, 48, 69);
+  background-color: var(--primary);
     padding: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
      display: flex;
@@ -22,8 +32,8 @@
          
 }
 .navbar ul li a{
-    margin: 24px;
-    color: #fff;
+  margin: 24px;
+  color: var(--white);
     font-size: 20px;
     font-weight: 400;
     cursor: pointer;
@@ -52,15 +62,15 @@
     width: 100%;
 }
 .navbar ul button {
-    background: linear-gradient(90deg, #f8b6d2 0%, #fa3045 100%);
-    color: #fff;
-    border: none;
-    border-radius: 18px;
+  background: linear-gradient(90deg, var(--accent) 0%, var(--primary) 100%);
+  color: var(--white);
+  border: none;
+  border-radius: 18px;
     padding: 8px 10px;
     font-size: 16px;
     font-weight: 500;
     margin-left: 18px;
-    box-shadow: 0 2px 12px rgba(250,48,69,0.12);
+  box-shadow: 0 2px 12px rgba(13,148,136,0.12);
     cursor: pointer;
     transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
     letter-spacing: 1px;
@@ -70,8 +80,8 @@
     z-index: 1;
 }
 .navbar ul button:hover {
-    background: linear-gradient(90deg, #fa3045 0%, #f8b6d2 100%);
-    box-shadow: 0 0 16px 4px #fff, 0 2px 12px 0 rgba(250,48,69,0.28);
+  background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 100%);
+  box-shadow: 0 0 16px 4px rgba(255,255,255,0.9), 0 2px 12px 0 rgba(13,148,136,0.28);
     transform: scale(1.07);
 }
 
@@ -95,30 +105,30 @@
 
 /* Patient button */
 .btn.patient {
-  background: linear-gradient(135deg, #ffffff, #f8f8f8);
-  color: #e63946;
-  border: 2px solid #fff;
+  background: linear-gradient(135deg, var(--white), var(--bg-1));
+  color: var(--primary);
+  border: 2px solid var(--white);
 }
 
 .btn.patient:hover {
-  background: #e63946;
-  color: #fff;
+  background: var(--primary);
+  color: var(--white);
   transform: translateY(-4px);
-  box-shadow: 0 10px 20px rgba(230, 57, 70, 0.6);
+  box-shadow: 0 10px 20px rgba(13,148,136,0.6);
 }
 
 /* Doctor button */
 .btn.doctor {
-  background: linear-gradient(135deg, #ffffff, #f8f8f8);
-  color: #1e293b;
-  border: 2px solid #fff;
+  background: linear-gradient(135deg, var(--white), var(--bg-1));
+  color: var(--text);
+  border: 2px solid var(--white);
 }
 
 .btn.doctor:hover {
-  background: #1e293b;
-  color: #fff;
+  background: var(--text);
+  color: var(--white);
   transform: translateY(-4px);
-  box-shadow: 0 10px 20px rgba(30, 41, 59, 0.6);
+  box-shadow: 0 10px 20px rgba(3,61,61,0.12);
 }
 
 .mehak{
@@ -135,7 +145,7 @@
 
 /* Alphabet Section */
 .alphabet-section {
-  background: #fff6f2;
+  background: var(--bg-2);
   padding: 20px;
   border-radius: 12px;
   flex: 1;
@@ -148,7 +158,7 @@
 .alphabet-section h2 {
   margin-bottom: 20px;
   font-size: 20px;
-  color: #033d3d;
+  color: var(--text);
 }
 
 .alphabet-grid {
@@ -161,7 +171,7 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: 1.5px solid #004d4d;
+  border: 1.5px solid var(--primary);
   background: white;
   font-size: 16px;
   cursor: pointer;
@@ -169,7 +179,7 @@
 }
 
 .alphabet-grid button:hover {
-  background: #004d4d;
+  background: var(--primary);
   color: white;
 }
 
@@ -186,14 +196,14 @@
 .search-section h2 {
   font-size: 20px;
   margin-bottom: 15px;
-  color: #033d3d;
+  color: var(--text);
 }
 
 .search-bar {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
-  border: 1.5px solid #b3cdd1;
+  border: 1.5px solid var(--secondary);
   border-radius: 25px;
   padding: 5px 10px;
   background: white;
@@ -209,7 +219,7 @@
 
 .search-bar .search-btn {
   border: none;
-  background: #006d6d;
+  background: var(--primary);
   color: white;
   border-radius: 50%;
   width: 35px;
@@ -231,9 +241,8 @@
 
 /* Emergency Red Bar */
 .emergency-bar {
-  background: #d32f2f;
-  color: #fff;
-   
+  background: var(--primary);
+  color: var(--white);
   padding: 12px 20px;
   font-size: 15px;
   font-weight: 500;
@@ -271,14 +280,14 @@
 
 .emergency-bar p span {
   margin-left: auto;
-  background: #fff3cd;
-  color: #d32f2f;
+  background: var(--accent);
+  color: var(--primary);
   padding: 4px 12px;
   border-radius: 12px;
   font-weight: bold;
   text-align: center;
   font-size: 13px;
-  opacity: 0.9;
+  opacity: 0.95;
 }
 #mob {
   color: white;
@@ -288,8 +297,8 @@
 
 /* Main Footer */
 .footer-container {
-  background-color: #0d1b2a;
-  color: #fff;
+  background-color: var(--primary);
+  color: var(--white);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
@@ -332,7 +341,7 @@
 
 .footer-links h4,
 .footer-contact h4 {
-  color: #4caf50;
+  color: var(--accent);
   margin-bottom: 15px;
   font-size: 26px;
 }
@@ -355,7 +364,7 @@
 }
 
 .footer-links ul li a:hover {
-  color: #4caf50;
+  color: var(--accent);
 }
 
 /* Contact */
@@ -368,16 +377,16 @@
 
 /* Bottom Bar */
 .footer-bottom {
-  background: #0a1522;
-  border-top: 1px solid #333;
+  background: rgba(13,148,136,0.95);
+  border-top: 1px solid rgba(0,0,0,0.08);
   padding: 15px 20px;
   text-align: center;
   font-size: 13px;
-  color: #ccc;
+  color: #e8f6f4;
 }
 
 .footer-bottom a {
-  color: #4caf50;
+  color: #0a150b;
   text-decoration: none;
 }
 
@@ -386,7 +395,7 @@
 }
 body{
   font-family: Arial, Helvetica, sans-serif;
-  background: #ccc;
+  background: var(--bg-1);
   height: 100vh;
 }
 
@@ -398,7 +407,7 @@ body{
   right: 50%;
   margin-left: -50vw; /* push to left edge */
   margin-right: -50vw; /* push to right edge */
-  background: linear-gradient(180deg, rgba(0,0,0,0.12), rgba(0,0,0,0.05));
+  background: linear-gradient(180deg, rgba(13,148,136,0.06), rgba(13,148,136,0.03));
   border-radius: 0; /* full-bleed usually has no rounded corners */
   overflow: hidden;
   box-shadow: 0 8px 30px rgba(0,0,0,0.12);
@@ -531,9 +540,9 @@ body{
 }
 
 .nav-dot[aria-selected="true"] {
-  background: linear-gradient(90deg,#fa3045,#f8b6d2);
+  background: linear-gradient(90deg, var(--primary), var(--accent));
   transform: scale(1.15);
-  box-shadow: 0 6px 18px rgba(250,48,69,0.35);
+  box-shadow: 0 6px 18px rgba(13,148,136,0.25);
 }
 
 @media (max-width: 900px) {
@@ -584,12 +593,12 @@ body{
     .circle {
       width: 120px;
       height: 120px;
-      background-color: rgb(250, 48, 69); /* Dark red shade */
+      background-color: var(--primary);
       border-radius: 50%;
       display: flex;
       justify-content: center;
       align-items: center;
-      border: 6px solid rgb(209, 13, 13);
+      border: 6px solid rgba(13,148,136,0.85);
       box-shadow: 0 0 5px rgba(0,0,0,0.1);
     }
 
@@ -600,8 +609,8 @@ body{
 
     .label {
       margin-top: 8px;
-      color: #a13417;
-      font-weight: bold;
+      color: var(--primary);
+      font-weight: bold;
 }
 
 
